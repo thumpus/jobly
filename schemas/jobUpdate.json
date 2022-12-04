@@ -1,0 +1,52 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Update Job Schema",
+    "required": [
+    ],
+    "properties": {
+        "title": {
+            "type": "string",
+            "default": "",
+            "title": "The title Schema",
+            "examples": [
+                "Bozo the clown"
+            ]
+        },
+        "salary": {
+            "type": "integer",
+            "default": 0,
+            "title": "The salary Schema",
+            "examples": [
+                110000
+            ],
+            "minimum": 0
+        },
+        "equity": {
+            "type": "number",
+            "default": 0.0,
+            "title": "The equity Schema",
+            "examples": [
+                0.15
+            ],
+            "maximum": 1.0
+        },
+        "company_handle": {
+            "type": "string",
+            "default": "",
+            "title": "The company_handle Schema",
+            "examples": [
+                "fghdghdf"
+            ],
+            "maxLength": "25"
+        }
+    },
+    "examples": [{
+        "title": "Bozo the clown",
+        "salary": 110000,
+        "equity": 0.02,
+        "company_handle": "fghdghdf"
+    }]
+}
